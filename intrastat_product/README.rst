@@ -14,13 +14,13 @@ Intrastat Product
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fintrastat--extrastat-lightgray.png?logo=github
-    :target: https://github.com/OCA/intrastat-extrastat/tree/14.0/intrastat_product
+    :target: https://github.com/OCA/intrastat-extrastat/tree/12.0/intrastat_product
     :alt: OCA/intrastat-extrastat
 .. |badge4| image:: https://img.shields.io/badge/weblate-Translate%20me-F47D42.png
-    :target: https://translation.odoo-community.org/projects/intrastat-extrastat-14-0/intrastat-extrastat-14-0-intrastat_product
+    :target: https://translation.odoo-community.org/projects/intrastat-extrastat-12-0/intrastat-extrastat-12-0-intrastat_product
     :alt: Translate me on Weblate
 .. |badge5| image:: https://img.shields.io/badge/runbot-Try%20me-875A7B.png
-    :target: https://runbot.odoo-community.org/runbot/227/14.0
+    :target: https://runbot.odoo-community.org/runbot/227/12.0
     :alt: Try me on Runbot
 
 |badge1| |badge2| |badge3| |badge4| |badge5| 
@@ -46,24 +46,6 @@ Installation
 ============
 
 This module is NOT compatible with the *account_intrastat* module from Odoo Enterprise.
-
-Configuration
-=============
-
-By default the intrastat declaration is generated based upon the product record master data.
-Hence unexpected results may occur in case this master data is not accurate,
-e.g. wrong or missing weight, country of origin, ...
-
-|
-
-This can be corrected by changing the appropriate fields when analysing the intrastat declaration
-but this can be challenging in case of large transaction volumes and especially in the specific use
-case where the product weight cannot be encoded correctly on the product records (e.g. products with variable weight).
-
-|
-
-It is possible to allow encoding the intrastat transaction details on the purchase/sale invoice
-via the "intrastat_product.group_invoice_intrastat_transaction_detail" usability group.
 
 Usage
 =====
@@ -102,12 +84,6 @@ and adapt the code for the specific needs of your country.
 
   Cf. l10n_be_istrastat_product as example, replace "be" by your Country Code.
 
-**Other functionality added by this module:**
-
-* Compute the Intrastat Lines in an invoice.
-  For this, your user needs to be in the "Technical / Invoice Intrastat Transaction Details" group.
-  Go to the "Intrastat transaction details" tab and press **Compute**
-
 Known issues / Roadmap
 ======================
 
@@ -121,7 +97,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/OCA/intrastat-extrastat/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us smashing it by providing a detailed and welcomed
-`feedback <https://github.com/OCA/intrastat-extrastat/issues/new?body=module:%20intrastat_product%0Aversion:%2014.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/OCA/intrastat-extrastat/issues/new?body=module:%20intrastat_product%0Aversion:%2012.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -131,7 +107,6 @@ Credits
 Authors
 ~~~~~~~
 
-* ACSONE SA/NV
 * brain-tec AG
 * Akretion
 * Noviat
@@ -141,11 +116,6 @@ Contributors
 
 * Alexis de Lattre, Akretion <alexis.delattre@akretion.com>
 * Luc De Meyer, Noviat <info@noviat.com>
-* Denis Roussel <denis.roussel@acsone.eu>
-* Tecnativa <www.tecnativa.com>:
-
-    * João Marques
-    * Víctor Martínez
 
 Maintainers
 ~~~~~~~~~~~
@@ -160,6 +130,6 @@ OCA, or the Odoo Community Association, is a nonprofit organization whose
 mission is to support the collaborative development of Odoo features and
 promote its widespread use.
 
-This module is part of the `OCA/intrastat-extrastat <https://github.com/OCA/intrastat-extrastat/tree/14.0/intrastat_product>`_ project on GitHub.
+This module is part of the `OCA/intrastat-extrastat <https://github.com/OCA/intrastat-extrastat/tree/12.0/intrastat_product>`_ project on GitHub.
 
 You are welcome to contribute. To learn how please visit https://odoo-community.org/page/Contribute.
